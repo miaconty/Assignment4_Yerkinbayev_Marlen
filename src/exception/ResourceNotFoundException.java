@@ -1,4 +1,4 @@
 package exception;
-
-public class ResourceNotFoundException {
+public class ResourceNotFoundException extends CourseAppException {
+    public ResourceNotFoundException(String message) { super("Not Found: " + message); }
 }
